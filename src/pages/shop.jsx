@@ -1,5 +1,5 @@
-import React from 'react'
-import { ShopCon } from '../style/shopStyle'
+import React from 'react';
+import { ShopCon } from '../style/shopStyle';
 import miniline from '../assets/mini-line.svg';
 import bigbottom from '../assets/big-bottom.svg';
 import bottom from '../assets/bottom.svg';
@@ -14,14 +14,13 @@ import besh from '../assets/5chi.svg';
 import tort from '../assets/4chi.svg';
 import star from '../assets/star.svg';
 
-
 const Shop = () => {
   return (
-<ShopCon className="shop-container">
+    <ShopCon className="shop-container">
       <div className="filter-con">
         <div className="location-box">
           <p className="filter-paragraph">Cost of car</p>
-          <img src={miniline} alt="line" style={{marginBottom: '8px'}} />
+          <img src={miniline} alt="line" style={{ marginBottom: '8px' }} />
           <div className="from-to-wrapper">
             <div className="from-to-left">
               <p>from</p>
@@ -33,7 +32,7 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="brand-box">
           <div className="select-mini">
             <p className="filter-paragraph">Brand</p>
@@ -52,7 +51,7 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="brand-box">
           <div className="select-mini">
             <p className="filter-paragraph">Company</p>
@@ -68,7 +67,7 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="brand-box">
           <div className="select-mini">
             <p className="filter-paragraph">License type</p>
@@ -87,7 +86,7 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="brand-box">
           <div className="select-mini">
             <p className="filter-paragraph">Number of travelers</p>
@@ -106,8 +105,8 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        
-        <div className="brand-box"> 
+
+        <div className="brand-box">
           <div className="select-mini">
             <p className="filter-paragraph">Location</p>
             <img src={bigbottom} alt="bottom" />
@@ -124,12 +123,12 @@ const Shop = () => {
               <p>Pusan</p>
             </div>
             <div className="button-box">
-              <button className="button-style-cansel">Cansel</button>
+              <button className="button-style-cansel">Cancel</button>
               <button className="button-style-search">Search</button>
             </div>
           </div>
         </div>
-        
+
         <div className="compcare">
           <p>Compare</p>
           <div className="compcare-cars">
@@ -145,12 +144,14 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="car-con">
         <div className="price-con">
           <div className="sort-box">
             <div className="item-number">
-              <p className="filter-paragraph">Item <span>25.156</span></p> 
+              <p className="filter-paragraph">
+                Item <span>25.156</span>
+              </p>
             </div>
             <div className="sort-select">
               <p className="sort-par">sort by</p>
@@ -172,7 +173,7 @@ const Shop = () => {
           </div>
           <hr />
         </div>
-        
+
         <div className="car-categoria">
           {}
           {[
@@ -191,14 +192,16 @@ const Shop = () => {
             carmany,
             carmany,
             carmany,
-           carmany
+            carmany,
           ].map((carImage, index) => (
             <div key={index} className="car-info">
               <img src={carImage} alt="car" />
               <h2 className="heading-info">Name of the car</h2>
               <div className="brand-name">
                 <div className="stars-box">
-                  <p className="paragraph-info">Brand name{index === 0 ? 's' : ''}</p>
+                  <p className="paragraph-info">
+                    Brand name{index === 0 ? 's' : ''}
+                  </p>
                   <div className="rating-wrapper">
                     <img src={star} alt="star" />
                     <p className="paragraph-info">5.3</p>
@@ -215,7 +218,7 @@ const Shop = () => {
         </div>
       </div>
     </ShopCon>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
